@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF"
+    tools:context=".Activity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txttieude2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#5697B7"
+            android:gravity="center"
+            android:text="QUẢN LÝ ĐỐI TƯỢNG HÌNH HỌC"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <!-- Hình tròn -->
+            <RadioButton
+                android:id="@+id/radtron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hình tròn:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editbankinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Nhập bán kính:"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+
+            <!-- Hình chữ nhật -->
+            <RadioButton
+                android:id="@+id/radchunhat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hình chữ nhật:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editchieudai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:hint="Nhập chiều dài:"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editchieurong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Nhập chiều rộng:"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+
+            <!-- Hình tam giác -->
+            <RadioButton
+                android:id="@+id/radtamgiac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hình tam giác:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editcanha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:hint="Nhập cạnh a:"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editcanhb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:hint="Nhập cạnh b:"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editcanhc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="16dp"
+                android:hint="Nhập cạnh c:"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+
+        <!-- 2 Button Tính và Thoát -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btntinh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#5C5470"
+                android:text="TÍNH"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnthoat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#5C5470"
+                android:text="THOÁT"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Kết quả hiển thị -->
+        <TextView
+            android:id="@+id/txttenhinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Đây là hình:"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtchuvi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Chu vi là:"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtdientich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diện tích là:"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</ScrollView>
